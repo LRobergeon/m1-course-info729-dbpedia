@@ -1,0 +1,24 @@
+{
+    "autoload": {
+        "psr-4": {"DBpedia\\": "app/DBpedia"}
+    },
+    "name": "INFO729/DPpedia",
+    "description": "Application créée pour le TP DBpedia d'INFO7",
+    "require": {
+        "php": ">=5.4.0",
+        "twig/twig": "^1.23",
+        "filp/whoops": "~1.1",
+        "easyrdf/easyrdf": "*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "LRobergeon",
+            "email": "Loicdu73100@gmail.com"
+        },
+        {
+            "name": "remi.r",
+            "email": "tekreme73@gmail.com"
+        }
+    ]
+}

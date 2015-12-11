@@ -49,9 +49,13 @@ Temporary Items
 *.project
 *.buildpath
 
+# =========================
+# Cloud9 files
+# =========================
+/.c9/
 
 # =========================
 # Personnal files
 # =========================
 composer.lock
-vendor
+/vendor/
