@@ -6,7 +6,6 @@
     "description": "Application créée pour le TP DBpedia d'INFO7",
     "require": {
         "php": ">=5.4.0",
-        "twig/twig": "^1.23",
         "filp/whoops": "~1.1",
         "easyrdf/easyrdf": "*"
     },

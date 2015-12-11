@@ -22,7 +22,7 @@
         </main>
         <footer>
             <p>
-                2015 © Abdelmoumni - Rebillard - Ribard - Robergeon
+                2015 © Abdelmoumni - Rebillard - Ribard - Robergeon (Scrum Master)
             </p>
         </footer>
     </body>
