@@ -19,6 +19,9 @@
             </nav>
         </header>
         <main>
+            <div>
+                <h1>Salut <?= $data['nom'] ?></h1>
+            </div>
         </main>
         <footer>
             <p>
