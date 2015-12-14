@@ -1,0 +1,33 @@
+.info729_dbpedia
+
+    main
+        @include display(flex)
+        @include flex-direction(row)
+        @include justify-content(flex-start)
+        @include align-items(stretch)
+    
+        section
+        
+            &.column-left
+                @include flex(2)
+                min-width: 200px
+            
+            &.column-main
+                @include flex(8)
+        
+        .selection
+        
+            &-item_type
+                @include category()
+                
+            &-facet
+                @include category()
+                
+            
+        .query
+        
+            &-selected_facets
+                @include category()
+                
+            &-result
+                @include category()

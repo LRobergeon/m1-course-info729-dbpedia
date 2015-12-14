@@ -1,12 +1,23 @@
 <?php
 
+use EasyRdf\Graph;
+use EasyRdf\Sparql\Client as Sparql;
+
+function typeAccess( $elem )
+{
+    return $elem->type;
+}
+
 $app->get('/', function() use ($app){
 
-    $foaf = new EasyRdf_Graph("http://njh.me/foaf.rdf");
-    $foaf->load();
-    $me = $foaf->primaryTopic();
+    $sparql = new Sparql('http://fr.dbpedia.org/sparql');
+    $types = $sparql->query(
+        'select distinct ?type where {?x ?type ?concept} LIMIT 20'
+    );
+    //$graph = Graph::newAndLoad(site_base_uri().'asset/dataset/countries.rdf');
     
     $app->render('home', [
-        'nom'   => $me->get('foaf:name'),
+        'isEmpty'   => count( $types ) <= 0,
+        'types'     => array_map("typeAccess", (array) $types ),
     ]);
 })->name('home');

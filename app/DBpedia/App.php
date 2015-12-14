@@ -42,6 +42,7 @@ class App extends Slim {
 	*/
 	public function render( $view, $data = [] )
 	{
+		extract( $data );
 		include_once( '../app/view/'.$view.'.php' );
 	}
 }

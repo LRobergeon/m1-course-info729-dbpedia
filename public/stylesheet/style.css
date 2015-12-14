@@ -1,0 +1,274 @@
+/*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*
+ *
+ *			BASE INDEX
+ *
+ */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif; }
+
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  background-color: #c5cae9;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: #21a1e1; }
+
+p {
+  margin: 0; }
+
+/*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*
+ *
+ *			SPECIFICS INDEX
+ *
+ */
+/*	*	*	*
+ *				MAIN
+ */
+.info729_dbpedia main {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  box-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -o-justify-content: flex-start;
+  justify-content: flex-start;
+  -ms-flex-pack: start;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  box-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  -o-align-items: stretch;
+  align-items: stretch;
+  -ms-flex-align: stretch; }
+  .info729_dbpedia main section.column-left {
+    -webkit-box-flex: 2;
+    -moz-box-flex: 2;
+    box-flex: 2;
+    -webkit-flex: 2;
+    -moz-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    min-width: 200px; }
+  .info729_dbpedia main section.column-main {
+    -webkit-box-flex: 8;
+    -moz-box-flex: 8;
+    box-flex: 8;
+    -webkit-flex: 8;
+    -moz-flex: 8;
+    -ms-flex: 8;
+    flex: 8; }
+  .info729_dbpedia main .selection-item_type {
+    -moz-margin-start: 5px;
+    -khtml-margin-start: 5px;
+    -webkit-margin-start: 5px;
+    -o-margin-start: 5px;
+    margin-left: 5px;
+    -moz-margin-end: 5px;
+    -khtml-margin-end: 5px;
+    -webkit-margin-end: 5px;
+    -o-margin-end: 5px;
+    margin-right: 5px;
+    -moz-margin-before: 5px;
+    -khtml-margin-before: 5px;
+    -webkit-margin-before: 5px;
+    -o-margin-before: 5px;
+    margin-top: 5px;
+    -moz-margin-after: 5px;
+    -khtml-margin-after: 5px;
+    -webkit-margin-after: 5px;
+    -o-margin-after: 5px;
+    margin-bottom: 5px;
+    -moz-padding-start: 10px;
+    -khtml-padding-start: 10px;
+    -webkit-padding-start: 10px;
+    -o-padding-start: 10px;
+    padding-left: 10px;
+    -moz-padding-end: auto;
+    -khtml-padding-end: auto;
+    -webkit-padding-end: auto;
+    -o-padding-end: auto;
+    padding-right: auto;
+    -moz-padding-before: 5px;
+    -khtml-padding-before: 5px;
+    -webkit-padding-before: 5px;
+    -o-padding-before: 5px;
+    padding-top: 5px;
+    -moz-padding-after: 5px;
+    -khtml-padding-after: 5px;
+    -webkit-padding-after: 5px;
+    -o-padding-after: 5px;
+    padding-bottom: 5px;
+    overflow-x: hidden;
+    background: #9fa8da; }
+    .info729_dbpedia main .selection-item_type .category-title h2 {
+      font-size: 1.1em; }
+    .info729_dbpedia main .selection-item_type .category-content {
+      font-size: 0.94em; }
+  .info729_dbpedia main .selection-facet {
+    -moz-margin-start: 5px;
+    -khtml-margin-start: 5px;
+    -webkit-margin-start: 5px;
+    -o-margin-start: 5px;
+    margin-left: 5px;
+    -moz-margin-end: 5px;
+    -khtml-margin-end: 5px;
+    -webkit-margin-end: 5px;
+    -o-margin-end: 5px;
+    margin-right: 5px;
+    -moz-margin-before: 5px;
+    -khtml-margin-before: 5px;
+    -webkit-margin-before: 5px;
+    -o-margin-before: 5px;
+    margin-top: 5px;
+    -moz-margin-after: 5px;
+    -khtml-margin-after: 5px;
+    -webkit-margin-after: 5px;
+    -o-margin-after: 5px;
+    margin-bottom: 5px;
+    -moz-padding-start: 10px;
+    -khtml-padding-start: 10px;
+    -webkit-padding-start: 10px;
+    -o-padding-start: 10px;
+    padding-left: 10px;
+    -moz-padding-end: auto;
+    -khtml-padding-end: auto;
+    -webkit-padding-end: auto;
+    -o-padding-end: auto;
+    padding-right: auto;
+    -moz-padding-before: 5px;
+    -khtml-padding-before: 5px;
+    -webkit-padding-before: 5px;
+    -o-padding-before: 5px;
+    padding-top: 5px;
+    -moz-padding-after: 5px;
+    -khtml-padding-after: 5px;
+    -webkit-padding-after: 5px;
+    -o-padding-after: 5px;
+    padding-bottom: 5px;
+    overflow-x: hidden;
+    background: #9fa8da; }
+    .info729_dbpedia main .selection-facet .category-title h2 {
+      font-size: 1.1em; }
+    .info729_dbpedia main .selection-facet .category-content {
+      font-size: 0.94em; }
+  .info729_dbpedia main .query-selected_facets {
+    -moz-margin-start: 5px;
+    -khtml-margin-start: 5px;
+    -webkit-margin-start: 5px;
+    -o-margin-start: 5px;
+    margin-left: 5px;
+    -moz-margin-end: 5px;
+    -khtml-margin-end: 5px;
+    -webkit-margin-end: 5px;
+    -o-margin-end: 5px;
+    margin-right: 5px;
+    -moz-margin-before: 5px;
+    -khtml-margin-before: 5px;
+    -webkit-margin-before: 5px;
+    -o-margin-before: 5px;
+    margin-top: 5px;
+    -moz-margin-after: 5px;
+    -khtml-margin-after: 5px;
+    -webkit-margin-after: 5px;
+    -o-margin-after: 5px;
+    margin-bottom: 5px;
+    -moz-padding-start: 10px;
+    -khtml-padding-start: 10px;
+    -webkit-padding-start: 10px;
+    -o-padding-start: 10px;
+    padding-left: 10px;
+    -moz-padding-end: auto;
+    -khtml-padding-end: auto;
+    -webkit-padding-end: auto;
+    -o-padding-end: auto;
+    padding-right: auto;
+    -moz-padding-before: 5px;
+    -khtml-padding-before: 5px;
+    -webkit-padding-before: 5px;
+    -o-padding-before: 5px;
+    padding-top: 5px;
+    -moz-padding-after: 5px;
+    -khtml-padding-after: 5px;
+    -webkit-padding-after: 5px;
+    -o-padding-after: 5px;
+    padding-bottom: 5px;
+    overflow-x: hidden;
+    background: #9fa8da; }
+    .info729_dbpedia main .query-selected_facets .category-title h2 {
+      font-size: 1.1em; }
+    .info729_dbpedia main .query-selected_facets .category-content {
+      font-size: 0.94em; }
+  .info729_dbpedia main .query-result {
+    -moz-margin-start: 5px;
+    -khtml-margin-start: 5px;
+    -webkit-margin-start: 5px;
+    -o-margin-start: 5px;
+    margin-left: 5px;
+    -moz-margin-end: 5px;
+    -khtml-margin-end: 5px;
+    -webkit-margin-end: 5px;
+    -o-margin-end: 5px;
+    margin-right: 5px;
+    -moz-margin-before: 5px;
+    -khtml-margin-before: 5px;
+    -webkit-margin-before: 5px;
+    -o-margin-before: 5px;
+    margin-top: 5px;
+    -moz-margin-after: 5px;
+    -khtml-margin-after: 5px;
+    -webkit-margin-after: 5px;
+    -o-margin-after: 5px;
+    margin-bottom: 5px;
+    -moz-padding-start: 10px;
+    -khtml-padding-start: 10px;
+    -webkit-padding-start: 10px;
+    -o-padding-start: 10px;
+    padding-left: 10px;
+    -moz-padding-end: auto;
+    -khtml-padding-end: auto;
+    -webkit-padding-end: auto;
+    -o-padding-end: auto;
+    padding-right: auto;
+    -moz-padding-before: 5px;
+    -khtml-padding-before: 5px;
+    -webkit-padding-before: 5px;
+    -o-padding-before: 5px;
+    padding-top: 5px;
+    -moz-padding-after: 5px;
+    -khtml-padding-after: 5px;
+    -webkit-padding-after: 5px;
+    -o-padding-after: 5px;
+    padding-bottom: 5px;
+    overflow-x: hidden;
+    background: #9fa8da; }
+    .info729_dbpedia main .query-result .category-title h2 {
+      font-size: 1.1em; }
+    .info729_dbpedia main .query-result .category-content {
+      font-size: 0.94em; }
+
+/*# sourceMappingURL=style.css.map */
