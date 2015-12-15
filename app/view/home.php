@@ -65,6 +65,28 @@
                                     <?php endforeach; ?>
                                 </select>
                             </div>
+                            <div class="order_by">
+                                <label>Trier par</label>
+                                <div class="radios_order_by">
+                                <?php foreach( $default_form_value['order_by'] as $key => $info ): ?>
+                                <span class="radio_order_by_<?= $key ?>">
+                                    <input type="radio" id="input_order_by_<?= $key ?>" name="order_by" value="<?= $key ?>" <?= ( $info['checked'] ? 'checked' : '' ) ?> />
+                                    <label for="input_order_by_<?= $key ?>"><?= $info['label'] ?></label>
+                                </span>
+                                <?php endforeach; ?>
+                                </div>
+                            </div>
+                            <div class="order">
+                                <label>Sens du tri</label>
+                                <div class="radios_order">
+                                <?php foreach( $default_form_value['order'] as $key => $info ): ?>
+                                <span class="radio_order_<?= $key ?>">
+                                    <input type="radio" id="input_order_<?= $key ?>" name="order" value="<?= $key ?>" <?= ( $info['checked'] ? 'checked' : '' ) ?> />
+                                    <label for="input_order_<?= $key ?>"><?= $info['label'] ?></label>
+                                </span>
+                                <?php endforeach; ?>
+                                </div>
+                            </div>
                             <div>
                                 <input type="submit" value="Rechercher" />
                             </div>

@@ -20,10 +20,11 @@ $app->get('/query', function() use ($app) {
     
     $default_langue = 'fr';
     
-    
     $departement = $app->request()->params('dpt');
     $nb_habitants = $app->request()->params('pop');
     $langue = $app->request()->params('lang');
+    $order_by = $app->request()->params('order_by');
+    $order = $app->request()->params('order');
     
     $villes = $sparql->query(
         "
@@ -38,7 +39,7 @@ $app->get('/query', function() use ($app) {
             FILTER ( LANGMATCHES(LANG(?nom), \"$langue\") ) .
             FILTER ( LANGMATCHES(LANG(?comment), \"$langue\") ) .
         }
-        order by ?nom
+        order by $order(?$order_by)
         "
     );
     
@@ -65,11 +66,33 @@ $app->get('/query', function() use ($app) {
             'pop_min'       => 10,
             'dpt_selected'  => '',
             'lang_selected' => $default_langue,
+            'order_by'      => array(
+                'nom'           => array(
+                    'label'     => "Nom",
+                    'checked'   => true,
+                ),
+                'population'    => array(
+                    'label'     => "Nombre d'habitants",
+                    'checked'   => false,
+                ),
+            ),
+            'order'         => array(
+                'ASC'   => array(
+                    'label'     => "ASC",
+                    'checked'   => true,
+                ),
+                'DESC'  => array(
+                    'label'     => "DESC",
+                    'checked'   => false,
+                ),
+            ),
         ),
         'selected_filters'      => array(
-            'dpt'   => $departement,
-            'pop'   => $nb_habitants,
-            'lang'  => $langue,
+            'dpt'       => $departement,
+            'pop'       => $nb_habitants,
+            'lang'      => $langue,
+            'order_by'  => $order_by,
+            'order'     => $order,
         ),
         'langues'               => $langues,
         'villes'                => array_map(function( $elem ){

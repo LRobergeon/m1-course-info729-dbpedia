@@ -30,6 +30,26 @@ $app->get('/', function() use ($app) {
         'default_form_value'    => array(
             'pop_min'       => 10,
             'default_lang'  => $default_langue,
+            'order_by'      => array(
+                'nom'           => array(
+                    'label'     => "Nom",
+                    'checked'   => true,
+                ),
+                'population'    => array(
+                    'label'     => "Nombre d'habitants",
+                    'checked'   => false,
+                ),
+            ),
+            'order'         => array(
+                'ASC'   => array(
+                    'label'     => "ASC",
+                    'checked'   => true,
+                ),
+                'DESC'  => array(
+                    'label'     => "DESC",
+                    'checked'   => false,
+                ),
+            ),
         ),
         'langues'               => $langues,
         'liste_villes'          => array_map(function( $elem ){
