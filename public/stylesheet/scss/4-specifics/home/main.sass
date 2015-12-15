@@ -9,25 +9,108 @@
         section
         
             &.column-left
-                @include flex(2)
+                @include flex(30)
                 min-width: 200px
             
             &.column-main
-                @include flex(8)
+                @include flex(70)
         
         .selection
         
             &-item_type
                 @include category()
                 
+                @include hide()
+                
             &-facet
                 @include category()
                 
-            
+                .category-content
+                    form
+                        > div
+                            @include margin(10px, 0px)
+                            
+                            > label
+                                @include display(block)
+                                @include padding(5px, 4px)
+                                
+                                &:after
+                                    @include display(inline-block)
+                                    @include padding(0, 4px)
+                                    content: ':'
+                                    
+                            
+                            > input,
+                            > select
+                                width: 100%
+        
         .query
         
             &-selected_facets
                 @include category()
                 
+                .category-title
+                    @include display(flex)
+                    @include flex-direction(row)
+                    @include align-items(center)
+                    @include justify-content(space-between)
+                    
+                    .query-redo
+                        form
+                            > input[type="submit"]
+                            
+                
+                .category-content
+                    .filters
+                        ul.selected_filters
+                            @include flex(1)
+                            @include display(flex)
+                            @include flex-direction(row)
+                            @include flex-wrap(wrap)
+                            width: 100%
+                            
+                            list-style: none
+                            
+                            li
+                                @include margin(3px)
+                                @include padding(2px, 5px, 2px, 2px)
+                                max-width: 340px
+                                word-break: break-all
+                                
+                                border-radius: 3px
+                                background-color: $light-green-l-5
+                
             &-result
                 @include category()
+                
+                .category-title
+                    @include display(flex)
+                    @include flex-direction(row)
+                    @include align-items(center)
+                    @include justify-content(space-between)
+                
+                .category-content
+                    ul.cities
+                        @include display(flex)
+                        @include flex-direction(column)
+                        @include padding(0)
+                        width: 100%
+                        
+                        list-style: none
+                            
+                        .city
+                            @include display(flex)
+                            @include flex-direction(row)
+                            @include padding(10px, 5px)
+                            
+                            &-information
+                                @include flex(3)
+                                @include padding(4px)
+                                max-width: 280px
+                                
+                                > h3
+                                    @include margin(0)
+                            
+                            &-comment
+                                @include flex(7)
+                                @include padding(4px)

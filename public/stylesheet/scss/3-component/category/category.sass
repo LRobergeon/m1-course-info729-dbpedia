@@ -1,6 +1,6 @@
 @mixin category()
     @include margin(5px)
-    @include padding(5px, auto, 5px, 10px)
+    @include padding(5px, 10px)
     
     overflow-x: hidden
     
@@ -9,10 +9,18 @@
     .category
     
         &-title
-        
+            @include margin(8px, 4px)
+            
             h2
+                @include margin(0)
                 font-size: 1.1em
         
         &-content
         
             font-size: 0.94em
+
+            .label .input .select
+                display: block
+            
+            .label
+                display: block
